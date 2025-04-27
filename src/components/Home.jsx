@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import Header from './Header';
 import Hero from './Hero';
-import About from './About';
-import Skills from './Skills';
-import Experience from './Experience';
-import Projects from './Projects';
-import Education from './Education';
-import Contact from './Contact';
-import Footer from './Footer';
 import Loading from './Loading';
 import { FiChevronUp } from 'react-icons/fi';
+
+const About = lazy(() => import('./About'));
+const Skills = lazy(() => import('./Skills'));
+const Experience = lazy(() => import('./Experience'));
+const Projects = lazy(() => import('./Projects'));
+const Education = lazy(() => import('./Education'));
+const Contact = lazy(() => import('./Contact'));
+const Footer = lazy(() => import('./Footer'));
 
 const HomeContainer = styled(motion.div)`
   position: relative;
@@ -80,13 +81,15 @@ const Home = () => {
     >
       <Header />
       <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Education />
-      <Contact />
-      <Footer />
+      <Suspense fallback={<Loading />}>
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Contact />
+        <Footer />
+      </Suspense>
 
       {showScroll && (
         <ScrollToTopButton

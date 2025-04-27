@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { FaCode, FaServer, FaChessKnight } from 'react-icons/fa';
+import  ChessImage from '../assets/chess_profile_2.jpg';
 
 const AboutSection = styled.section`
   padding: 5rem 2rem;
@@ -97,8 +98,13 @@ const HighlightCard = styled(motion.div)`
 
 const AboutImage = styled(motion.div)`
   position: relative;
-  height: 400px;
-  background: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80') center/cover;
+  height: 500px;
+  ${'' /* background: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80') center/cover; */}
+
+background: url(${ChessImage}) center/cover;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
@@ -207,75 +213,3 @@ const About = () => {
 };
 
 export default About;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // /components/About.jsx
-// import React from "react";
-// import { motion } from "framer-motion";
-// import {
-//   SiJava,
-//   SiReact,
-//   SiSpringboot,
-//   SiMysql,
-//   SiJavascript,
-//   SiNodedotjs,
-//   SiDocker,
-//   SiAws,
-// } from "react-icons/si";
-
-// export default function About() {
-//   return (
-//     <div className="max-w-5xl mx-auto py-16 px-6">
-//       <motion.h2
-//         className="text-4xl font-bold text-center text-indigo-600 mb-10"
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ duration: 0.8 }}
-//       >
-//         About Me
-//       </motion.h2>
-
-//       <motion.p
-//         className="text-lg text-gray-700 text-center leading-relaxed mb-12"
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ delay: 0.4, duration: 0.8 }}
-//       >
-//         I'm a result-oriented Full Stack Developer with experience in building scalable
-//         web applications using <strong>Java, Spring Boot, React.js, Node.js</strong>,
-//         and relational databases like <strong>MySQL</strong>. I’ve contributed to full-stack
-//         enterprise apps, RESTful APIs, automation scripts, and cloud-based solutions at GS LAB, Smart Data, and more.
-//       </motion.p>
-
-//       <motion.div
-//         className="grid grid-cols-2 sm:grid-cols-4 gap-6 justify-center items-center text-center text-3xl text-indigo-600"
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ delay: 0.8, duration: 1 }}
-//       >
-//         <div><SiJava title="Java" /></div>
-//         <div><SiSpringboot title="Spring Boot" /></div>
-//         <div><SiReact title="React.js" /></div>
-//         <div><SiMysql title="MySQL" /></div>
-//         <div><SiJavascript title="JavaScript" /></div>
-//         <div><SiNodedotjs title="Node.js" /></div>
-//         <div><SiDocker title="Docker" /></div>
-//         <div><SiAws title="AWS" /></div>
-//       </motion.div>
-//     </div>
-//   );
-// }

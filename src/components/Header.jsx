@@ -120,7 +120,7 @@ const Header = () => {
   return (
     <HeaderContainer style={{ background: scrolled ? 'rgba(15, 32, 39, 0.95)' : 'rgba(15, 32, 39, 0.9)' }}>
       <Nav>
-        <Logo href="#">Sachin</Logo>
+        <Logo href="#">Sachin Rathod</Logo>
 
         <NavLinks isOpen={isOpen}>
           {navLinks.map((link) => (
