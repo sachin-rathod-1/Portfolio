@@ -292,7 +292,7 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: "GS LAB | GAVS TECHNOLOGIES",
+      company: "Neurealm | Formerly GAVS TECHNOLOGIES",
       position: "Software Engineer",
       duration: "December 2024 – Present",
       location: "Chennai, India",
@@ -304,7 +304,7 @@ const Experience = () => {
         "Participating in Agile sprints to deliver high-quality software solutions.",
         "Spearheaded CI/CD implementation with Jenkins and GitLab."
       ],
-      logo: "https://www.gslab.com/wp-content/uploads/2022/11/GS-Lab-GAVS-Logo.svg",
+      logo: "https://storage.googleapis.com/accesswire/featureimages/1027056/.jpg",
       website: "https://www.gslab.com",
       tech: [<SiSpring />, <SiReact />, <SiMysql />,<SiGit/>, <SiJenkins />, <SiPerl />, <DiScrum />]
     },

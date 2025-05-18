@@ -523,36 +523,27 @@ const Projects = () => {
     }
   }, [controls, isInView]);
 
-  // Add more projects to showcase your skills
   const projects = [
-    {
-      id: 1,
-      title: "Event Management System",
-      description: "Developed an event management system with intuitive user interface and backend architecture using React and Spring Boot and MySQL. Designed and implemented RESTful API endpoints and database connectivity, demonstrating skills in full-stack web development, teamwork, and problem-solving.",
-      technologies: ["React.js", "Spring Boot", "Hibernate", "MySQL"],
-      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      githubLink: "https://github.com/sachin-rathod-1/CDAC-EMS-Project",
-      demoLink: ""
-    }
-    // {
-    //   id: 2,
-    //   title: "E-Commerce Platform",
-    //   description: "A full-featured e-commerce platform with product catalog, shopping cart, user authentication, and payment processing. Built with modern technologies for optimal performance and user experience.",
-    //   technologies: ["React.js", "Spring Boot", "MySQL", "Java"],
-    //   image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    //   githubLink: "#",
-    //   demoLink: "#"
-    // },
-    // {
-    //   id: 3,
-    //   title: "Task Management App",
-    //   description: "A collaborative task management application that helps teams organize projects, track progress, and meet deadlines efficiently with real-time updates and notifications.",
-    //   technologies: ["React.js", "Java", "Hibernate", "MySQL"],
-    //   image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    //   githubLink: "#",
-    //   demoLink: "#"
-    // }
-  ];
+  {
+    id: 1,
+    title: "SaChess – Real Time Chess Web Application",
+    description: "Built a real-time multiplayer chess platform with puzzle solving, social features, and global leaderboards. Implemented the frontend with React.js and Material-UI, and designed backend architecture with Spring Boot, JWT authentication, and WebSockets. Integrated Stockfish engine for puzzle validation and personalized training.",
+    technologies: ["React.js", "Material-UI", "Spring Boot", "WebSockets", "JWT", "Stockfish"],
+    image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1366740/ss_a669ab650dc0358e938f0f2630a484ca6b3c2a33.1920x1080.jpg?t=1693568695?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+    githubLink: "https://github.com/sachin-rathod-1/sachess-webapp",
+    demoLink: ""
+  },
+  {
+    id: 2,
+    title: "Event Management System",
+    description: "Developed an event management system with intuitive user interface and backend architecture using React and Spring Boot and MySQL. Designed and implemented RESTful API endpoints and database connectivity, demonstrating skills in full-stack web development, teamwork, and problem-solving.",
+    technologies: ["React.js", "Spring Boot", "Hibernate", "MySQL"],
+    image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    githubLink: "https://github.com/sachin-rathod-1/CDAC-EMS-Project",
+    demoLink: ""
+  }
+]
+
 
   const getTechIcon = (tech) => {
     switch(tech) {
